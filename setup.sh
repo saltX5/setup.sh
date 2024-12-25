@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo apt update && sudo apt upgrade -y
 sudo apt install -y git build-essential python3 python3-pip rustc cargo
 
 sudo apt install -y rustscan
@@ -30,15 +29,6 @@ if [ ! -d "pdfrip" ]; then
     cd ..
 else
     echo "PDFRip already cloned."
-fi
-
-if [ ! -d "aider" ]; then
-    git clone https://github.com/Aider-AI/aider.git
-    cd aider
-    pip3 install -r requirements.txt
-    cd ..
-else
-    echo "Aider already cloned."
 fi
 
 pip3 install -r requirements.txt || echo "No requirements.txt file found."
