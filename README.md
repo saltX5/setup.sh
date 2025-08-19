@@ -1,1 +1,1 @@
-my default setups
+my setups
